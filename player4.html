@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ELITE ECLASS 英领网络学院</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="templatemo">
+
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700itali" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,200,100,600" rel="stylesheet">
+    <!-- JavaScripts -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/misc.css">
+    <link rel="stylesheet" href="css/green-scheme.css">
+
+
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+
+
+    <style type="text/css">
+
+        .qqqq {
+            margin-top:130px;
+            margin-left:300px;
+            margin-bottom:200px;
+        }
+    </style>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var mod_menu = $(".mod-menu");//导航模块区
+            var menu = function () {
+                var menuItem = $(".menu-item li");//选择导航列表
+                menuItem.each(function () {
+                    var _index = $(this).index();//获取当前选择菜单列表的索引
+                    $(this).mouseenter(function () {
+                        var y = $(this).position().top + 1;//获取当前鼠标滑过的列表的顶部坐标
+                        $(".menu-cont").show();
+                        $(".menu-cont").css("top", y);//需要显示的对应索引内容
+                        $(this).addClass("mouse-bg").siblings().removeClass("mouse-bg");
+                        $(".menu-cont>div").eq(_index).show().siblings().hide();
+                    });
+                });/*导航菜单菜单*/
+                $(".mod-menu").mouseleave(function () {
+                    $(".menu-cont").hide();
+                    menuItem.removeClass("mouse-bg");
+                })
+            }//展开二级菜单
+            menu();//执行展开二级菜单函
+        });
+    </script>
+
+</head>
+
+
+<body>
+
+<header class="site-header clearfix">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-14">
+                <div class="pull-left logo">
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>	<!-- /.logo -->
+
+                <div class="main-navigation pull-right">
+
+                    <nav class="main-nav visible-md visible-lg">
+                        <ul class="sf-menu">
+                            <li class="active"><a href="index.html">主页</a></li>
+                            <li>
+                                <a href="#">街舞视频欣赏</a>
+                                <ul>
+                                    <li><a href="portfolio.html">欧美视频</a></li>
+                                    <li><a href="project-image.html">国内视频</a></li>
+                                    <li><a href="project-slideshow.html">日韩视频</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">街舞视频教学</a>
+                                <ul>
+                                    <li><a href="blog.html">欧美视频</a></li>
+                                    <li><a href="blog-single.html">国内视频</a></li>
+                                    <li><a href="#">日韩视频</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="archives.html">登陆</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul> <!-- /.sf-menu -->
+                    </nav> <!-- /.main-nav -->
+                    <!-- This one in here is responsive menu for tablet and mobiles -->
+                    <div class="responsive-navigation visible-sm visible-xs">
+                        <a href="#nogo" class="menu-toggle-btn">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div> <!-- /responsive_navigation -->
+
+                </div>
+
+            </div> <!-- /.col-md-12 -->
+
+        </div> <!-- /.row -->
+
+    </div> <!-- /.container -->
+</header> <!-- /.site-header -->
+<div class="qqqq">
+    <video controls="controls" poster="C:\Users\quent\Pictures\IMAGES\WALLPAPERS\WALLPAPER (100).jpg" width="1000" height="500">
+        <source src="video/5.mp4" type="video/mp4" />
+        <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
+            <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+            <param name="allowFullScreen" value="true" />
+            <param name="wmode" value="transparent" />
+            <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'url':'http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4','autoPlay':false}]}" />
+            <img alt="Big Buck Bunny" src="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
+        </object>
+    </video>
+
+    <!--<p>
+        <strong>Download video:</strong> <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">MP4 format</a> | <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">Ogg format</a> | <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm">WebM format</a>
+    </p>-->
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="footer-nav clearfix">
+                    <ul class="footer-menu">
+                        <li><a href="index.html">主页</a></li>
+                        <li><a href="portfolio.html">街舞视频欣赏</a></li>
+                        <li><a href="blog.html">街舞视频教学</a></li>
+                        <li><a href="archives.html">登陆</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul> <!-- /.footer-menu -->
+                </nav> <!-- /.footer-nav -->
+            </div> <!-- /.col-md-12 -->
+        </div> <!-- /.row -->
+        <div class="row">
+            <div class="col-md-12">
+                <p class="copyright-text">Designed & Created By quentin</p>
+            </div> <!-- /.col-md-12 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</footer> <!-- /.site-footer -->
+<!-- Scripts -->
+<script src="js/min/plugins.min.js"></script>
+<script src="js/min/medigo-custom.min.js"></script>
+<script>
+    $("#mytab a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+    })
+</script>
+</body>
+</html>

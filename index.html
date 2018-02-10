@@ -1,0 +1,859 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>ELITE ECLASS 英领网络学院</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+    <meta name="author" content="templatemo">
+
+	<!-- Google Fonts -->
+	<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700itali" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,200,100,600" rel="stylesheet">
+	<!-- JavaScripts -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="css/misc.css">
+	<link rel="stylesheet" href="css/green-scheme.css">
+	
+
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+
+
+    <style type="text/css">
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* mod-menu */
+        .mold_open_hover, .mold_open {
+            display: inline-block;
+            width: 200px;
+            height: 6px;
+            margin-left: 0px;
+            position: relative;
+            top: -2px;
+            
+        }
+
+        .mold_open {
+            background-position: 0 -6px;
+            
+        }
+
+        .mold_open_hover {
+            background-position: 0 0;
+        }
+
+        .mod-menu {
+            position: relative;
+            z-index: 1000;
+            left: -1px;
+            margin-left: -25px;
+            margin-top: 35px;
+            box-shadow: 2px 0 10px #74d059;
+            width:1200px;
+            height:500px;
+            padding-top:78px;
+            padding-left:90px;
+
+        }
+
+        .menu-cont-list a:hover {
+            text-decoration: underline;
+
+        }
+
+        .mod-menu .menu-item {
+            width: 230px;
+            position: relative;
+            z-index: 22;
+        }
+
+            .mod-menu .menu-item li {
+                height: 50px;
+                line-height: 47px;
+                background: transparent;
+                border-top: solid 1px #74d059;
+                vertical-align:middle;
+            }
+
+                .mod-menu .menu-item li.mouse-bg {
+                    background: url(../image/mouse-menu-bg.jpg) no-repeat transparent;
+                    position: relative;
+                    z-index: 22;
+                    margin-right: -4px;
+                }
+
+            .mod-menu .menu-item a {
+                color: #74d059;
+                font-size: 16px;
+                font-weight: 700;
+                font-family: YouYuan;
+                padding-left: 75px;
+                padding-top: 0px;
+                display: block;
+                height: 45px;
+                border-top: solid 1px #74d059;
+                box-shadow: 2px 0 10px #74d059;
+            }
+
+                .mod-menu .menu-item a:hover {
+                    text-decoration: none;
+                }
+
+        .mod-menu .menu-cont {
+            position: absolute;
+            left: 350px;
+            top: 10px;
+            background: rgba(0, 0, 0, 0.50);
+            width: 573px;
+            border: solid 1px #74d059;
+            box-shadow: 2px 0 10px #74d059;
+            z-index: 20;
+        }
+
+        .mod-menu .menu-cont-list {
+            padding: 0 30px;
+        }
+
+            .mod-menu .menu-cont-list li {
+		border-bottom: dotted 1px #74d059;
+                padding: 10px 0;
+            }
+
+                .mod-menu .menu-cont-list li:last-child {
+                    border-bottom: none;
+                }
+
+            .mod-menu .menu-cont-list h3 {
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+                .mod-menu .menu-cont-list h3 a {
+                    color: #74d059;
+                }
+
+        .mod-menu .menu-list-link a {
+            color: #74d059;
+            line-height: 24px;
+        }
+
+        .mod-menu .menu-list-link .long-string {
+            color: #74d059;
+            font-size: 12px;
+            padding: 0 10px;
+        }
+        .qqqqq {
+            margin-top:70px;
+        }
+    </style>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var mod_menu = $(".mod-menu");//导航模块区
+            var menu = function () {
+                var menuItem = $(".menu-item li");//选择导航列表
+                menuItem.each(function () {
+                    var _index = $(this).index();//获取当前选择菜单列表的索引
+                    $(this).mouseenter(function () {
+                        var y = $(this).position().top + 1;//获取当前鼠标滑过的列表的顶部坐标
+                        $(".menu-cont").show();
+                        $(".menu-cont").css("top", y);//需要显示的对应索引内容
+                        $(this).addClass("mouse-bg").siblings().removeClass("mouse-bg");
+                        $(".menu-cont>div").eq(_index).show().siblings().hide();
+                    });
+                });/*导航菜单菜单*/
+                $(".mod-menu").mouseleave(function () {
+                    $(".menu-cont").hide();
+                    menuItem.removeClass("mouse-bg");
+                })
+            }//展开二级菜单
+            menu();//执行展开二级菜单函
+        });
+    </script>
+
+</head>
+
+
+<body>
+
+<header class="site-header clearfix">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-14">
+				<div class="pull-left logo">
+					<a href="index.html">
+						<img src="images/logo.png">
+					</a>
+				</div>	<!-- /.logo -->
+
+                <div class="main-navigation pull-right">
+
+                    <nav class="main-nav visible-md visible-lg">
+                        <ul class="sf-menu">
+                            <li class="active"><a href="index.html">主页</a></li>
+                            <li>
+                                <a href="#">街舞视频欣赏</a>
+                                <ul>
+                                    <li><a href="portfolio.html">欧美视频</a></li>
+                                    <li><a href="project-image.html">国内视频</a></li>
+                                    <li><a href="project-slideshow.html">日韩视频</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">街舞视频教学</a>
+                                <ul>
+                                    <li><a href="blog.html">欧美视频</a></li>
+                                    <li><a href="blog-single.html">国内视频</a></li>
+                                    <li><a href="#">日韩视频</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="archives.html">登陆</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul> <!-- /.sf-menu -->
+                    </nav> <!-- /.main-nav -->
+                    <!-- This one in here is responsive menu for tablet and mobiles -->
+                    <div class="responsive-navigation visible-sm visible-xs">
+                        <a href="#nogo" class="menu-toggle-btn">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div> <!-- /responsive_navigation -->
+
+                </div>
+
+			</div> <!-- /.col-md-12 -->
+
+		</div> <!-- /.row -->
+
+	</div> <!-- /.container -->
+</header> <!-- /.site-header -->
+    
+    
+    
+
+    <div class="container">
+        <div class="row project-single">
+            
+            <div class="col-md-4">
+                <div class="mod-menu">
+                    
+                        <ul class="menu-item">
+                            <li><a href="http://www.ffpic.com/">街舞教学</a></li>
+                            <li><a href="http://www.ffpic.com/">街舞起源</a></li>
+                            <li><a href="http://www.ffpic.com/">街舞比赛</a></li>
+                            <li><a href="http://www.ffpic.com/">街舞类别</a></li>
+                            <li><a href="http://www.ffpic.com/">民间街舞</a></li>
+                            <li><a href="http://www.ffpic.com/">街舞大师</a></li>
+			    <li><a href="contact.html">联系我们</a></li>
+                        </ul><!--一级菜单列表-->
+
+                    <div class="menu-cont" style="display:none;top:241px;">
+
+                        <div class="menu-cont-list" style="display:none;">
+                            <ul>
+
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">mortal combat</a></h3>
+                                    <div class="menu-list-link">
+                                        <a href="http://www.ffpic.com/">1</a>
+                                        <span class="long-string">|</span>
+                                        <a href="http://www.ffpic.com/">2</a>
+                                        <span class="long-string">|</span>
+                                        <a href="http://www.ffpic.com/">3</a>
+                                        <span class="long-string">|</span>
+                                        <a href="http://www.ffpic.com/">4</a>
+                                        <span class="long-string">|</span>
+                                        <a href="http://www.ffpic.com/">5</a>
+                                        <span class="long-string">|</span>
+                                        <a href="http://www.ffpic.com/">more</a>
+                                        <span class="long-string">|</span>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">bbody focus</a></h3>
+                                    <div class="menu-list-link">
+                                        <a href="http://www.ffpic.com/">footwalk</a>
+                                        <span class="long-string">|</span>
+                                        <a href="http://www.ffpic.com/">freeze</a>
+                                        <span class="long-string">|</span>
+                                        <a href="http://www.ffpic.com/">go down</a>
+                                        <span class="long-string">|</span>
+                                        <a href="http://www.ffpic.com/">powermove</a>
+                                        <span class="long-string">|</span>
+                                        <a href="http://www.ffpic.com/">toprock</a>
+                                        <span class="long-string">|</span>
+
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-cont-list" style="display:none;">
+                            <ul>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">原地性的HIP-HOP</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">Old School</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">New School的出现</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">New School的成熟阶段</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+
+                            </ul>
+                        </div>
+
+                        <div class="menu-cont-list" style="display:none;">
+                            <ul>
+
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">德国</a></h3>
+                                    <div class="menu-list-link">
+                                        <a href="http://www.ffpic.com/">BOTY</a>
+                                        <span class="long-string">|</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">英国</a></h3>
+                                    <div class="menu-list-link">
+                                        <a href="http://www.ffpic.com/">UK</a>
+                                        <span class="long-string">|</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">日本</a></h3>
+                                    <div class="menu-list-link">
+                                        <a href="http://www.ffpic.com/">OLD SKOOL NIGHT</a>
+                                        <span class="long-string">|</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">日本</a></h3>
+                                    <div class="menu-list-link">
+                                        <a href="http://www.ffpic.com/">OLD SKOOL NIGHT</a>
+                                        <span class="long-string">|</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">韩国</a></h3>
+                                    <div class="menu-list-link">
+                                        <a href="http://www.ffpic.com/">B-BOY UNIT</a>
+                                        <span class="long-string">|</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">美国</a></h3>
+                                    <div class="menu-list-link">
+                                        <a href="http://www.ffpic.com/">FREESTYLESIEESION</a>
+                                        <span class="long-string">|</span>
+                                        <a href="http://www.ffpic.com/">IBE</a>
+                                        <span class="long-string">|</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">中国</a></h3>
+                                    <div class="menu-list-link">
+                                        <a href="http://www.ffpic.com/">KOD</a>
+                                        <span class="long-string">|</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">世界</a></h3>
+                                    <div class="menu-list-link">
+                                        <a href="http://www.ffpic.com/">BC ONE</a>
+                                        <span class="long-string">|</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-cont-list" style="display:none;">
+                            <ul>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">Breaking（霹雳舞）</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">Poppin（机械舞）</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">Locking（锁舞）</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">Voguing（甩舞）</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">Hiphop（自由舞）</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">Jazz（爵士舞）</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">Raggae（雷鬼舞）</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-cont-list" style="display: none;">
+                            <ul>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">高校表演</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">民间舞团</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-cont-list" style="display:none;">
+                            <ul>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">salah</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">南贤俊</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">迈克尔杰克逊</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">hong 10</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">t1m</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3><a href="http://www.ffpic.com/">黄景行</a></h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                            </ul>
+                        </div>
+			<div class="menu-cont-list" style="display:none;">
+                            <ul>
+                                <li>
+                                    <h3 style="color:#74d059">客服热线 A : 19999999999</h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3 style="color:#74d059">客服热线 B : 19999999999</h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                                <li>
+                                    <h3 style="color:#74d059">客服热线 C : 16666666666</h3>
+                                    <div class="menu-list-link"></div>
+                                </li>
+                               
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div> 
+
+            <div class="col-md-8">
+                    <div class="flexslider">
+                        <div class="qqqqq">
+                            <ul class="slides">
+                                <li><img src="images/includes/homeintro.jpg" alt="Slide 1"></li>
+                                <li><img src="images/includes/portfolio.jpg" alt="Slide 2"></li>
+                                <li><img src="images/includes/bloghhhhh.jpg" alt="Slide 3"></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+
+
+			<!--<div class="col-md-4">
+				<div class="project-info">
+					<span class="subtitle">Subtitle Goes here</span>
+					<h3 class="project-title">Project Slideshow Post Format</h3>
+					<p class="description">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.<br><br>Nam convallis neque nec magna malesuada dictum. Aliquam commodo erat non tellus porta imperdiet sit amet eu lacus.</p>
+					<ul class="meta-post">
+						<li><span>Date:</span>February 2084</li>
+						<li><span>Skills:</span>Branding, Illustration</li>
+						<li><span>URL:</span><a href="#">www.company.com</a></li>
+					</ul>
+				</div> <!-- /.project-info -->
+			</div> <!-- /.col-md-4 -->
+
+           
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+
+
+
+
+        <section class="cta clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="cta-title"><strong>Want to use Medigo?</strong> Go and download it on templatemo.com</h4>
+                        <a href="#" class="main-button accent-color">search<i class="icon-button fa fa-arrow-right"></i></a>
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section> <!-- /.cta -->
+
+        <section class="light-content services">
+            <div class="container">
+
+            </div> <!-- /.container -->
+        </section> <!-- /.services -->
+
+        <section class="dark-content portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2 class="section-title">我们的热门视频</h2>
+                            <p class="section-desc">Everything you need to create a professional website.</p>
+                        </div> <!-- /.section-header -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+
+            <div id="portfolio-carousel" class="portfolio-carousel portfolio-holder">
+                <div class="item">
+                    <div class="thumb-post">
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Dashboard Template</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Visual Admin</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/1.jpg" title="Visual Admin">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/includes/1.jpg" alt="Visual Admin">
+                    </div>
+                </div> <!-- /.item -->
+                <div class="item">
+                    <div class="thumb-post">
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Mobile Ready</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Compass Template</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/2.jpg" title="Compass Template">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/includes/2.jpg" alt="Compass Template">
+                    </div>
+                </div> <!-- /.item -->
+                <div class="item">
+                    <div class="thumb-post">
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Responsive Design</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Awesome Theme</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/3.jpg" title="Awesome Theme">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/includes/3.jpg" alt="Awesome Theme">
+                    </div>
+                </div> <!-- /.item -->
+                <div class="item">
+                    <div class="thumb-post">
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Portfolio</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Volton Personal Site</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/4.jpg" title="Volton Personal Site">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/includes/4.jpg" alt="Volton Personal Site">
+                    </div>
+                </div> <!-- /.item -->
+                <div class="item">
+                    <div class="thumb-post">
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Green</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Rectangle Design</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/5.jpg" title="Rectangle Design">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/includes/5.jpg" alt="Rectangle Design">
+                    </div>
+                </div> <!-- /.item -->
+                <div class="item">
+                    <div class="thumb-post">
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Portfolio</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Masonry Gallery</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/6.jpg" title="Masonry Gallery">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/includes/6.jpg" alt="Masonry Gallery">
+                    </div>
+                </div> <!-- /.item -->
+                <div class="item">
+                    <div class="thumb-post">
+                        <div class="overlay">
+                            <div class="overlay-inner">
+                                <div class="portfolio-infos">
+                                    <span class="meta-category">Branding / Identity</span>
+                                    <h3 class="portfolio-title"><a href="project-slideshow.html">Gloss Template</a></h3>
+                                </div>
+                                <div class="portfolio-expand">
+                                    <a class="fancybox" href="images/includes/7.jpg" title="Gloss Template">
+                                        <i class="fa fa-expand"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/includes/7.jpg" alt="Gloss Template">
+                    </div>
+                </div> <!-- /.item -->
+            </div> <!-- /#owl-demo -->
+        </section> <!-- /.portfolio-holder -->
+
+        <section class="testimonials-widget">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="bxslider">
+                            <div class="testimonial">
+                                <div class="testimonial-content">
+                                    <span class="testimonial-author">Salah Benlemqawanssa - 法国街舞冠军</span>
+                                    <p class="testimonial-description">首先，当你想表达你脑海里所想的东西的时候，你必须尽力去完成你想做东西，用全力去做。
+当我刚刚开始跳舞的时候，我从不去考虑什么音乐，什么舞蹈基础，我只去想我的梦想，我的感受.当然，在这之后我逐渐开始去考虑那些舞蹈的规律。</p>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-content">
+                                    <span class="testimonial-author">政井海人 - 日本Former Action Crew舞者</span>
+                                    <p class="testimonial-description">作为一个舞者，不要只看视频，同时要多去跑现场观看dancer是一件很重要的事情，自己亲眼看过动作之后，会受到一些启发，然后把这个启发往好的方向练。</p>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-content">
+                                    <span class="testimonial-author">黄景行 - 世界级街舞大师r</span>
+                                    <p class="testimonial-description">在我的理解里Tough除了坚持做好一件事情之外还需要不停的探索、尝试、创新，只有这样才能不停的丰富自己，所以我才会更多元化的尝试除了舞蹈之外的不同领域，创新与坚持不是冲突的，创新在先、坚持在后。</p>
+                                </div>
+                            </div>
+                        </div> <!-- /.bxslider -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </section> <!-- /.testimonials-widget -->
+
+        <section class="light-content our-team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2 class="section-title">我们的成员</h2>
+                            <p class="section-desc">不想做前端设计的程序猿不是一个好软件工程师</p>
+                        </div> <!-- /.section-header -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+            <div class="team-members">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team-member">
+                                <div class="thumb-post">
+                                    <img src="images/includes/member1.jpg" alt="">
+                                    <span class="member-role">Marketing Manager</span>
+                                </div>
+                                <div class="member-content">
+                                    <h4 class="member-name">Amy Groovy</h4>
+                                    <p>Duis vitae consequat neque. Nulla pharetra eleifend nulla. </p>
+                                </div>
+                            </div> <!-- /.team-member -->
+                        </div> <!-- /.col-md-4 -->
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team-member">
+                                <div class="thumb-post">
+                                    <img src="images/includes/member2.jpg" alt="">
+                                    <span class="member-role">Web Developer</span>
+                                </div>
+                                <div class="member-content">
+                                    <h4 class="member-name">Candy Sharp</h4>
+                                    <p>Duis vitae consequat neque. Nulla pharetra eleifend nulla. </p>
+                                </div>
+                            </div> <!-- /.team-member -->
+                        </div> <!-- /.col-md-4 -->
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team-member">
+                                <div class="thumb-post">
+                                    <img src="images/includes/member3.jpg" alt="">
+                                    <span class="member-role">Graphic Designer</span>
+                                </div>
+                                <div class="member-content">
+                                    <h4 class="member-name">Linda Master</h4>
+                                    <p>Duis vitae consequat neque. Nulla pharetra eleifend nulla. </p>
+                                </div>
+                            </div> <!-- /.team-member -->
+                        </div> <!-- /.col-md-4 -->
+
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+            </div> <!-- /.team-members -->
+        </section> <!-- /.our-team -->
+
+        <section id="blogPosts" class="parallax">
+            <div class="parallax-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-header">
+                                <h2 class="section-title">我们的友站</h2>
+                                <p class="section-desc">有他们为榜样我们可以做的更好</p>
+                            </div> <!-- /.section-header -->
+                        </div> <!-- /.col-md-12 -->
+                    </div> <!-- /.row -->
+                    <div class="row latest-posts">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post clearfix">
+                                <div class="thumb-post">
+                                    <a href="http://www.vhiphop.com"><img src="images/includes/vhip.png" alt="" class="img-circle"></a>
+                                </div>
+                                <div class="blog-post-content">
+                                    <h4 class="post-title"><a href="http://www.vhiphop.com/">唯舞 VHIPHOP - 这里有你想看的街舞视频</a></h4>
+                                    <span class="meta-post-date">12 February 2015</span>
+                                </div>
+                            </div> <!-- /.blog-post -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post clearfix">
+                                <div class="thumb-post">
+                                    <a href="http://www.dancering.cn/"><img src="images/includes/jiewuhobby.png" alt="" class="img-circle"></a>
+                                </div>
+                                <div class="blog-post-content">
+                                    <h4 class="post-title"><a href="http://www.dancering.cn/">街舞爱好者论坛 – 国内最火爆的街舞社区</a></h4>
+                                    <span class="meta-post-date">10 February 2015</span>
+                                </div>
+                            </div> <!-- /.blog-post -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post clearfix">
+                                <div class="thumb-post">
+                                    <a href="http://www.51555.net/"><img src="images/includes/xiha.png" alt="" class="img-circle"></a>
+                                </div>
+                                <div class="blog-post-content">
+                                    <h4 class="post-title"><a href="http://www.51555.net/">嘻哈之城 - 提供街舞资源的专业街舞网站</a></h4>
+                                    <span class="meta-post-date">8 February 2015</span>
+                                </div>
+                            </div> <!-- /.blog-post -->
+                        </div> <!-- /.col-md-4 -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+            </div> <!-- /.parallax-overlay -->
+        </section> <!-- /#blogPosts -->
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="footer-nav clearfix">
+                            <ul class="footer-menu">
+                                <li><a href="index.html">主页</a></li>
+                                <li><a href="portfolio.html">街舞视频欣赏</a></li>
+                                <li><a href="blog.html">街舞视频教学</a></li>
+                                <li><a href="archives.html">登陆</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                            </ul> <!-- /.footer-menu -->
+                        </nav> <!-- /.footer-nav -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright-text">Designed & Created By quentin</p>
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </footer> <!-- /.site-footer -->
+        <!-- Scripts -->
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/medigo-custom.min.js"></script>
+        <script>
+            $("#mytab a").click(function (e) {
+                e.preventDefault();
+                $(this).tab("show");
+            })
+        </script>
+</body>
+</html>
